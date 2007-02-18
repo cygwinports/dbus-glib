@@ -13,25 +13,24 @@ framework, which can be used by any two apps to communicate directly
 This package contains the Glib D-BUS bindings.
 
 Runtime requirements:
-  cygwin-1.5.21-2
-  expat-1.95.8-1
-  glib2-2.10.3-1
-  libdbus1_3-0.94-1
+  cygwin-1.5.24-2
+  glib2-2.12.9-1
+  libdbus1_3-1.0.2-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.21-2
-  autoconf2.5-2.59-2
-  automake1.9-1.9.6-1
-  binutils-20060709-1
-  cygport-0.2.5-1
-  dbus-0.91-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  libtool1.5-1.5.22-1
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.2.9-1
+  dbus-1.0.2-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
   make-3.81-1
-  pkg-config-0.20-1
-  sed-4.1.5-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
 
 Canonical website:
   http://www.freedesktop.org/Software/dbus
@@ -42,31 +41,31 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack dbus-glib-0.72-X-src.tar.bz2
+  unpack dbus-glib-0.73-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./dbus-glib-0.72-X.cygport all
+  cygport ./dbus-glib-0.73-X.cygport all
 
 This will create:
-  /usr/src/dbus-glib-0.72-X-src.tar.bz2
-  /usr/src/dbus-glib-0.72-X.tar.bz2
-  /usr/src/dbus-glib-doc-0.72-X.tar.bz2
-  /usr/src/libdbus-glib_1-devel-0.72-X.tar.bz2
-  /usr/src/libdbus-glib_1_2-0.72-X.tar.bz2
+  /usr/src/dbus-glib-0.73-X-src.tar.bz2
+  /usr/src/dbus-glib-0.73-X.tar.bz2
+  /usr/src/dbus-glib-doc-0.73-X.tar.bz2
+  /usr/src/libdbus-glib_1-devel-0.73-X.tar.bz2
+  /usr/src/libdbus-glib_1_2-0.73-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /usr/bin/dbus-binding-tool.exe
-  /usr/share/doc/Cygwin/dbus-glib-0.72.README
-  /usr/share/doc/dbus-glib-0.72/AUTHORS
-  /usr/share/doc/dbus-glib-0.72/COPYING
-  /usr/share/doc/dbus-glib-0.72/ChangeLog
-  /usr/share/doc/dbus-glib-0.72/INSTALL
-  /usr/share/doc/dbus-glib-0.72/NEWS
-  /usr/share/doc/dbus-glib-0.72/README
+  /usr/share/doc/Cygwin/dbus-glib-0.73.README
+  /usr/share/doc/dbus-glib-0.73/AUTHORS
+  /usr/share/doc/dbus-glib-0.73/COPYING
+  /usr/share/doc/dbus-glib-0.73/ChangeLog
+  /usr/share/doc/dbus-glib-0.73/INSTALL
+  /usr/share/doc/dbus-glib-0.73/NEWS
+  /usr/share/doc/dbus-glib-0.73/README
 
 Files included in the runtime library packages:
 
@@ -85,116 +84,34 @@ Files included in the devel package:
 
 Files included in the doc package:
 
-  /usr/share/doc/dbus-glib-0.72/api/annotated.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-binding-tool-glib_8c-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-binding-tool-glib_8h-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-gidl_8c-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-gidl_8h-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-glib-error-enum_8h-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-glib-error-switch_8h-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-glib-lowlevel_8h-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-glib-tool_8c-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-glib-tool_8h-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-glib_8c-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-glib_8h-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-gloader-expat_8c-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-gmain_8c-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-gmarshal_8c-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-gmarshal_8h-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-gobject_8c-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-gobject_8h-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-gparser_8c-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-gparser_8h-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-gproxy_8c-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-gsignature_8c-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-gsignature_8h-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-gtest-main_8c-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-gtest_8c-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-gtest_8h-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-gthread_8c-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-gtype-specialized_8c-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-gtype-specialized_8h-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-gutils_8c-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-gutils_8h-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-gvalue-utils_8c-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-gvalue-utils_8h-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-gvalue_8c-source.html
-  /usr/share/doc/dbus-glib-0.72/api/dbus-gvalue_8h-source.html
-  /usr/share/doc/dbus-glib-0.72/api/doxygen.css
-  /usr/share/doc/dbus-glib-0.72/api/doxygen.png
-  /usr/share/doc/dbus-glib-0.72/api/example-client_8c-source.html
-  /usr/share/doc/dbus-glib-0.72/api/example-service_8c-source.html
-  /usr/share/doc/dbus-glib-0.72/api/example-signal-emitter_8c-source.html
-  /usr/share/doc/dbus-glib-0.72/api/example-signal-recipient_8c-source.html
-  /usr/share/doc/dbus-glib-0.72/api/files.html
-  /usr/share/doc/dbus-glib-0.72/api/functions.html
-  /usr/share/doc/dbus-glib-0.72/api/functions_vars.html
-  /usr/share/doc/dbus-glib-0.72/api/group__DBusGLib.html
-  /usr/share/doc/dbus-glib-0.72/api/group__DBusGLibInternals.html
-  /usr/share/doc/dbus-glib-0.72/api/hierarchy.html
-  /usr/share/doc/dbus-glib-0.72/api/index.html
-  /usr/share/doc/dbus-glib-0.72/api/modules.html
-  /usr/share/doc/dbus-glib-0.72/api/pages.html
-  /usr/share/doc/dbus-glib-0.72/api/sm-marshal_8c-source.html
-  /usr/share/doc/dbus-glib-0.72/api/statemachine-server_8c-source.html
-  /usr/share/doc/dbus-glib-0.72/api/statemachine-server_8h-source.html
-  /usr/share/doc/dbus-glib-0.72/api/statemachine_8c-source.html
-  /usr/share/doc/dbus-glib-0.72/api/statemachine_8h-source.html
-  /usr/share/doc/dbus-glib-0.72/api/structConnectionSetup.html
-  /usr/share/doc/dbus-glib-0.72/api/structDBusBindingToolCData.html
-  /usr/share/doc/dbus-glib-0.72/api/structDBusGAsyncData.html
-  /usr/share/doc/dbus-glib-0.72/api/structDBusGErrorInfo.html
-  /usr/share/doc/dbus-glib-0.72/api/structDBusGFuncSignature.html
-  /usr/share/doc/dbus-glib-0.72/api/structDBusGHashTableValueForeachData.html
-  /usr/share/doc/dbus-glib-0.72/api/structDBusGLibHashMarshalData.html
-  /usr/share/doc/dbus-glib-0.72/api/structDBusGLibWriteInterfaceValues.html
-  /usr/share/doc/dbus-glib-0.72/api/structDBusGLibWriteIterfaceData.html
-  /usr/share/doc/dbus-glib-0.72/api/structDBusGMessageQueue.html
-  /usr/share/doc/dbus-glib-0.72/api/structDBusGProxyList.html
-  /usr/share/doc/dbus-glib-0.72/api/structDBusGProxyNameOwnerForeachData.html
-  /usr/share/doc/dbus-glib-0.72/api/structDBusGProxyNameOwnerInfo.html
-  /usr/share/doc/dbus-glib-0.72/api/structDBusGProxyUnassociateData.html
-  /usr/share/doc/dbus-glib-0.72/api/structDBusGSignalClosure.html
-  /usr/share/doc/dbus-glib-0.72/api/structDBusGTypeMarshalData.html
-  /usr/share/doc/dbus-glib-0.72/api/structDBusGTypeMarshalVtable.html
-  /usr/share/doc/dbus-glib-0.72/api/structDBusGTypeSpecializedAppendContext.html
-  /usr/share/doc/dbus-glib-0.72/api/structDBusGTypeSpecializedAppendContextReal.html
-  /usr/share/doc/dbus-glib-0.72/api/structDBusGTypeSpecializedCollectionVtable.html
-  /usr/share/doc/dbus-glib-0.72/api/structDBusGTypeSpecializedContainer.html
-  /usr/share/doc/dbus-glib-0.72/api/structDBusGTypeSpecializedData.html
-  /usr/share/doc/dbus-glib-0.72/api/structDBusGTypeSpecializedMapVtable.html
-  /usr/share/doc/dbus-glib-0.72/api/structDBusGTypeSpecializedStructVtable.html
-  /usr/share/doc/dbus-glib-0.72/api/structDBusGTypeSpecializedVtable.html
-  /usr/share/doc/dbus-glib-0.72/api/structDBusGValueCollectionMarshalData.html
-  /usr/share/doc/dbus-glib-0.72/api/structDBusGValueMarshalCtx.html
-  /usr/share/doc/dbus-glib-0.72/api/structExpatParseContext.html
-  /usr/share/doc/dbus-glib-0.72/api/structGPendingNotifyClosure.html
-  /usr/share/doc/dbus-glib-0.72/api/structIOHandler.html
-  /usr/share/doc/dbus-glib-0.72/api/structSMObject.html
-  /usr/share/doc/dbus-glib-0.72/api/structSMObjectClass.html
-  /usr/share/doc/dbus-glib-0.72/api/structSMServer.html
-  /usr/share/doc/dbus-glib-0.72/api/structSMServerClass.html
-  /usr/share/doc/dbus-glib-0.72/api/structSomeObject.html
-  /usr/share/doc/dbus-glib-0.72/api/structSomeObjectClass.html
-  /usr/share/doc/dbus-glib-0.72/api/structTestObject.html
-  /usr/share/doc/dbus-glib-0.72/api/structTestObjectClass.html
-  /usr/share/doc/dbus-glib-0.72/api/structTimeoutHandler.html
-  /usr/share/doc/dbus-glib-0.72/api/struct__DBusGMethodInfo.html
-  /usr/share/doc/dbus-glib-0.72/api/struct__DBusGMethodInvocation.html
-  /usr/share/doc/dbus-glib-0.72/api/struct__DBusGObjectInfo.html
-  /usr/share/doc/dbus-glib-0.72/api/struct__DBusGProxy.html
-  /usr/share/doc/dbus-glib-0.72/api/struct__DBusGProxyClass.html
-  /usr/share/doc/dbus-glib-0.72/api/struct__DBusGProxyManager.html
-  /usr/share/doc/dbus-glib-0.72/api/struct__DBusGProxyPrivate.html
-  /usr/share/doc/dbus-glib-0.72/api/tab_b.gif
-  /usr/share/doc/dbus-glib-0.72/api/tab_l.gif
-  /usr/share/doc/dbus-glib-0.72/api/tab_r.gif
-  /usr/share/doc/dbus-glib-0.72/api/tabs.css
-  /usr/share/doc/dbus-glib-0.72/api/todo.html
+  /usr/share/gtk-doc/html/dbus-glib/ch01.html
+  /usr/share/gtk-doc/html/dbus-glib/ch02.html
+  /usr/share/gtk-doc/html/dbus-glib/ch03.html
+  /usr/share/gtk-doc/html/dbus-glib/dbus-binding-tool.html
+  /usr/share/gtk-doc/html/dbus-glib/dbus-glib-DBus-GLib-low-level.html
+  /usr/share/gtk-doc/html/dbus-glib/dbus-glib-DBus-GObject-related-functions.html
+  /usr/share/gtk-doc/html/dbus-glib/dbus-glib-DBusGConnection.html
+  /usr/share/gtk-doc/html/dbus-glib/dbus-glib-DBusGError.html
+  /usr/share/gtk-doc/html/dbus-glib/dbus-glib-DBusGMessage.html
+  /usr/share/gtk-doc/html/dbus-glib/dbus-glib-DBusGMethod.html
+  /usr/share/gtk-doc/html/dbus-glib/dbus-glib-DBusGProxy.html
+  /usr/share/gtk-doc/html/dbus-glib/dbus-glib-GType-utility-functions.html
+  /usr/share/gtk-doc/html/dbus-glib/dbus-glib.devhelp
+  /usr/share/gtk-doc/html/dbus-glib/dbus-glib.devhelp2
+  /usr/share/gtk-doc/html/dbus-glib/home.png
+  /usr/share/gtk-doc/html/dbus-glib/index.html
+  /usr/share/gtk-doc/html/dbus-glib/index.sgml
+  /usr/share/gtk-doc/html/dbus-glib/left.png
+  /usr/share/gtk-doc/html/dbus-glib/right.png
+  /usr/share/gtk-doc/html/dbus-glib/style.css
+  /usr/share/gtk-doc/html/dbus-glib/up.png
 
 ------------------
 
 Port Notes:
+
+----- version 0.73-1 -----
+Version bump.
 
 ----- version 0.72-1 -----
 Version bump.
