@@ -1,0 +1,21 @@
+inherit gnome2
+
+DESCRIPTION="D-BUS application message bus (GLib bindings)"
+HOMEPAGE="http://freedesktop.org/wiki/Software/DBusBindings"
+SRC_URI="http://dbus.freedesktop.org/releases/${PN}/${P}.tar.gz"
+
+abi=1-2
+PKG_NAMES="${PN} lib${PN}_${abi/-/_} lib${PN}_${abi%-*}-devel"
+PKG_HINTS='setup lib devel'
+PKG_CONTENTS[0]=	# empty
+PKG_CONTENTS[1]="usr/bin/*-${abi}.dll usr/share/doc/"
+PKG_CONTENTS[2]='usr/bin/*.exe usr/include/ usr/lib/ usr/share/gtk-doc/'
+
+CYGCONF_ARGS="
+	--with-x \
+	--with-xml=expat \
+	--enable-verbose-mode --enable-checks --enable-asserts \
+	--with-system-pid-file=/var/run/dbus.pid \
+	--with-system-socket=/var/lib/dbus/system_bus_socket \
+	--with-session-socket-dir=/tmp \
+"

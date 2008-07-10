@@ -13,23 +13,24 @@ framework, which can be used by any two apps to communicate directly
 This package contains the Glib D-BUS bindings.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  glib2-2.12.13-1
-  libdbus1_3-1.0.2-1
+  cygwin-1.5.25-15
+  glib2-2.16.3-1
+  libdbus1_3-1.2.1-1
+  libexpat1-2.0.1-1
+  libintl8-0.15-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
   autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.5-1
-  dbus-1.0.2-1
-  gawk-3.1.5-4
+  automake1.10-1.10.1-1
+  binutils-20080523-1
+  cygport-0.3.12-1
+  dbus-1.2.1-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
-  libtool1.5-1.5.23a-2
+  libtool-2.2.2-2
   make-3.81-1
-  pkg-config-0.21-1
+  pkg-config-0.23a-2
   sed-4.1.5-2
 
 Canonical website:
@@ -41,36 +42,33 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack dbus-glib-0.74-X-src.tar.bz2
+  unpack dbus-glib-0.76-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./dbus-glib-0.74-X.cygport all
+  cygport ./dbus-glib-0.76-X.cygport all
 
 This will create:
-  /usr/src/dbus-glib-0.74-X-src.tar.bz2
-  /usr/src/dbus-glib-0.74-X.tar.bz2
-  /usr/src/libdbus-glib_1-devel-0.74-X.tar.bz2
-  /usr/src/libdbus-glib_1_2-0.74-X.tar.bz2
+  /usr/src/dbus-glib-0.76-X-src.tar.bz2
+  /usr/src/dbus-glib-0.76-X.tar.bz2
+  /usr/src/libdbus-glib_1-devel-0.76-X.tar.bz2
+  /usr/src/libdbus-glib_1_2-0.76-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary packages:
 
-(dbus-glib)
-  /usr/bin/dbus-binding-tool.exe
-  /usr/share/doc/Cygwin/dbus-glib-0.74.README
-  /usr/share/doc/dbus-glib-0.74/AUTHORS
-  /usr/share/doc/dbus-glib-0.74/COPYING
-  /usr/share/doc/dbus-glib-0.74/ChangeLog
-  /usr/share/doc/dbus-glib-0.74/INSTALL
-  /usr/share/doc/dbus-glib-0.74/NEWS
-  /usr/share/doc/dbus-glib-0.74/README
-
 (libdbus-glib_1_2)
   /usr/bin/cygdbus-glib-1-2.dll
+  /usr/share/doc/dbus-glib-0.76/AUTHORS
+  /usr/share/doc/dbus-glib-0.76/COPYING
+  /usr/share/doc/dbus-glib-0.76/ChangeLog
+  /usr/share/doc/dbus-glib-0.76/INSTALL
+  /usr/share/doc/dbus-glib-0.76/NEWS
+  /usr/share/doc/dbus-glib-0.76/README
 
 (libdbus-glib_1-devel)
+  /usr/bin/dbus-binding-tool.exe
   /usr/include/dbus-1.0/dbus/dbus-glib-bindings.h
   /usr/include/dbus-1.0/dbus/dbus-glib-error-enum.h
   /usr/include/dbus-1.0/dbus/dbus-glib-lowlevel.h
@@ -104,6 +102,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.76-1 -----
+Version bump.
 
 ----- version 0.74-1 -----
 Version bump.

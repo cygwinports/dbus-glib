@@ -1,5 +1,5 @@
 category: System
-requires: cygwin glib2-devel libdbus1-devel
+requires: cygwin glib2-devel libdbus-glib_1_2 libdbus1_3 libdbus1-devel libexpat1 libintl8
 external-source: dbus-glib
 sdesc: "Freedesktop message bus system (Glib development)"
 ldesc: "D-BUS is a message bus system, a simple way for applications to talk

@@ -1,6 +1,6 @@
-category: System Gnome
-requires: cygwin expat libdbus-glib_1_2
-sdesc: "Freedesktop message bus system (Glib clients)"
+category: _obsolete
+requires: libdbus-glib_1-devel
+sdesc: "Freedesktop message bus system (source)"
 ldesc: "D-BUS is a message bus system, a simple way for applications to talk
 to one another.
 
