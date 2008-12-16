@@ -1,7 +1,7 @@
-category: System
-requires: cygwin glib2-devel libdbus-glib_1_2 libdbus1_3 libdbus1-devel libexpat1 libintl8
+category: System Gnome
+requires: cygwin libdbus1_3 libglib2.0_0 libintl8
 external-source: dbus-glib
-sdesc: "Freedesktop message bus system (Glib development)"
+sdesc: "Freedesktop message bus system (Glib bindings)"
 ldesc: "D-BUS is a message bus system, a simple way for applications to talk
 to one another.
 
