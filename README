@@ -14,9 +14,9 @@ This package contains the Glib D-BUS bindings.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  libdbus1_3-1.2.4-1
+  libdbus1_3-1.2.12-1
   libexpat1-2.0.1-1
-  libglib2.0_0-2.18.3-1
+  libglib2.0_0-2.18.4-1
   libintl8-0.17-2
 
 Build requirements:
@@ -28,7 +28,7 @@ Build requirements:
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   libtool-2.2.6a-1
-  make-3.81-1
+  make-3.81-2
   pkg-config-0.23a-2
   sed-4.1.5-2
 
@@ -41,35 +41,35 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack dbus-glib-0.78-X-src.tar.bz2
+  unpack dbus-glib-0.80-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./dbus-glib-0.78-X.cygport all
+  cygport ./dbus-glib-0.80-X.cygport all
 
 This will create:
-  /usr/src/dbus-bash-completion-0.78-X.tar.bz2
-  /usr/src/dbus-glib-0.78-X-src.tar.bz2
-  /usr/src/libdbus-glib_1-devel-0.78-X.tar.bz2
-  /usr/src/libdbus-glib_1_2-0.78-X.tar.bz2
+  /usr/src/dbus-bash-completion-0.80-X.tar.bz2
+  /usr/src/dbus-glib-0.80-X-src.tar.bz2
+  /usr/src/libdbus-glib_1-devel-0.80-X.tar.bz2
+  /usr/src/libdbus-glib_1_2-0.80-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary packages:
 
 (dbus-bash-completion)
-  /etc/profile.d/dbus-bash-completion.sh
+  /etc/bash_completion.d/dbus-bash-completion.sh
   /usr/lib/dbus-1.0/dbus-bash-completion-helper.exe
 
 (libdbus-glib_1_2)
   /usr/bin/cygdbus-glib-1-2.dll
-  /usr/share/doc/dbus-glib-0.78/AUTHORS
-  /usr/share/doc/dbus-glib-0.78/COPYING
-  /usr/share/doc/dbus-glib-0.78/ChangeLog
-  /usr/share/doc/dbus-glib-0.78/HACKING
-  /usr/share/doc/dbus-glib-0.78/INSTALL
-  /usr/share/doc/dbus-glib-0.78/NEWS
-  /usr/share/doc/dbus-glib-0.78/README
+  /usr/share/doc/dbus-glib-0.80/AUTHORS
+  /usr/share/doc/dbus-glib-0.80/COPYING
+  /usr/share/doc/dbus-glib-0.80/ChangeLog
+  /usr/share/doc/dbus-glib-0.80/HACKING
+  /usr/share/doc/dbus-glib-0.80/INSTALL
+  /usr/share/doc/dbus-glib-0.80/NEWS
+  /usr/share/doc/dbus-glib-0.80/README
 
 (libdbus-glib_1-devel)
   /usr/bin/dbus-binding-tool.exe
@@ -105,6 +105,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.80-1 -----
+Version bump.
 
 ----- version 0.78-1 -----
 Version bump.

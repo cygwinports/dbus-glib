@@ -1,4 +1,4 @@
-category: _obsolete
+category: System Gnome
 requires: libdbus-glib_1-devel
 sdesc: "Freedesktop message bus system (source)"
 ldesc: "D-BUS is a message bus system, a simple way for applications to talk
