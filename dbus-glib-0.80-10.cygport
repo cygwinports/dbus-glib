@@ -11,12 +11,4 @@ libdbus_glib_1_2_CONTENTS="usr/bin/*-1-2.dll usr/share/doc/"
 libdbus_glib_1_devel_CONTENTS="usr/bin/*.exe usr/include/ usr/lib/lib*
                                usr/lib/pkgconfig/ usr/share/gtk-doc/"
 
-CYGCONF_ARGS="
-	--libexecdir=/usr/lib/dbus-1.0
-	--with-x \
-	--with-xml=expat \
-	--enable-verbose-mode --enable-checks --enable-asserts \
-	--with-system-pid-file=/var/run/dbus.pid \
-	--with-system-socket=/var/lib/dbus/system_bus_socket \
-	--with-session-socket-dir=/tmp \
-"
+CYGCONF_ARGS="--libexecdir=/usr/lib/dbus-1.0"

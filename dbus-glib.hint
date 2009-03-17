@@ -1,5 +1,4 @@
-category: System Gnome
-requires: libdbus-glib_1-devel
+category: Gnome
 sdesc: "Freedesktop message bus system (source)"
 ldesc: "D-BUS is a message bus system, a simple way for applications to talk
 to one another.

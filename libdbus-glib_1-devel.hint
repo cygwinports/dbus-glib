@@ -1,4 +1,4 @@
-category: System Gnome
+category: Gnome
 requires: cygwin libdbus-glib_1_2 libdbus1-devel libexpat1-devel libglib2.0-devel libintl8
 external-source: dbus-glib
 sdesc: "Freedesktop message bus system (Glib development)"
