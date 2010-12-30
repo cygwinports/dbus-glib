@@ -1,5 +1,5 @@
 category: Gnome
-requires: libdbus1_3 libgcc1 libglib2.0_0 libintl8
+requires: libdbus1_3 libglib2.0_0 libintl8
 external-source: dbus-glib
 sdesc: "Freedesktop message bus system (Glib bindings)"
 ldesc: "D-BUS is a message bus system, a simple way for applications to talk
