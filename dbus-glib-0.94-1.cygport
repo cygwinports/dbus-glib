@@ -3,7 +3,6 @@ inherit gnome2
 DESCRIPTION="D-BUS application message bus (GLib bindings)"
 HOMEPAGE="http://freedesktop.org/wiki/Software/DBusBindings"
 SRC_URI="http://dbus.freedesktop.org/releases/${PN}/${P}.tar.gz"
-PATCH_URI="0.76-doxygen-vpath.patch"
 
 PKG_NAMES="${PN} lib${PN}_1_2 lib${PN}_1-devel dbus-bash-completion"
 dbus_bash_completion_CONTENTS="etc/bash_completion.d/ usr/lib/dbus-1.0/"
