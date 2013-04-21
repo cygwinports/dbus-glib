@@ -1,6 +1,9 @@
 inherit gnome2
 
-CATEGORY="Gnome"
+NAME="dbus-glib"
+VERSION=0.100.2
+RELEASE=1
+CATEGORY="GNOME"
 SUMMARY="FreeDesktop application message bus (GLib bindings)"
 DESCRIPTION="D-Bus is a message bus system, a simple way for applications to
 talk to one another. D-Bus supplies both a system daemon (for events such as
