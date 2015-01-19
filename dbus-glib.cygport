@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="dbus-glib"
-VERSION=0.100.2
+VERSION=0.102
 RELEASE=1
 CATEGORY="GNOME"
 SUMMARY="FreeDesktop application message bus (GLib bindings)"
@@ -18,9 +18,7 @@ SRC_URI="http://dbus.freedesktop.org/releases/${PN}/${P}.tar.gz"
 PKG_NAMES="lib${PN}_1_2 lib${PN}_1-devel dbus-bash-completion"
 dbus_bash_completion_SUMMARY="Bash completion macros for D-Bus"
 dbus_bash_completion_REQUIRES="bash-completion"
-dbus_bash_completion_CONTENTS="etc/bash_completion.d/ usr/lib/dbus-1.0/"
+dbus_bash_completion_CONTENTS="etc/bash_completion.d/ usr/libexec/"
 libdbus_glib_1_2_CONTENTS="usr/bin/*-1-2.dll usr/share/doc/"
 libdbus_glib_1_devel_CONTENTS="usr/bin/*.exe usr/include/ usr/lib/lib*
                                usr/lib/pkgconfig/ usr/share/gtk-doc/ usr/share/man/"
-
-CYGCONF_ARGS="--libexecdir=/usr/lib/dbus-1.0"
