@@ -1,9 +1,9 @@
 inherit gnome2
 
 NAME="dbus-glib"
-VERSION=0.102
+VERSION=0.106
 RELEASE=1
-CATEGORY="GNOME"
+CATEGORY="Libs"
 SUMMARY="FreeDesktop application message bus (GLib bindings)"
 DESCRIPTION="D-Bus is a message bus system, a simple way for applications to
 talk to one another. D-Bus supplies both a system daemon (for events such as
@@ -13,9 +13,10 @@ Also, the message bus is built on top of a general one-to-one message passing
 framework, which can be used by any two apps to communicate directly
 (without going through the message bus daemon)."
 HOMEPAGE="http://freedesktop.org/wiki/Software/DBusBindings"
-SRC_URI="http://dbus.freedesktop.org/releases/${PN}/${P}.tar.gz"
+SRC_URI="http://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-${VERSION}.tar.gz"
 
-PKG_NAMES="lib${PN}_1_2 lib${PN}_1-devel dbus-bash-completion"
+PKG_NAMES="lib${NAME}_1_2 lib${NAME}_1-devel dbus-bash-completion"
+dbus_bash_completion_CATEGORY="Shells"
 dbus_bash_completion_SUMMARY="Bash completion macros for D-Bus"
 dbus_bash_completion_REQUIRES="bash-completion"
 dbus_bash_completion_CONTENTS="etc/bash_completion.d/ usr/libexec/"
