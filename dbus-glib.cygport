@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="dbus-glib"
-VERSION=0.106
+VERSION=0.108
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="FreeDesktop application message bus (GLib bindings)"
